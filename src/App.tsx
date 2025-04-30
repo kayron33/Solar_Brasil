@@ -1,30 +1,27 @@
-import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import HomePage from './pages/HomePage';
-import ServicosPage from './pages/ServicosPage';
-import SobrePage from './pages/SobrePage';
-import ContatoPage from './pages/ContatoPage';
-import EquipePage from './pages/EquipePage';
-import BlogPage from './pages/BlogPage';
-import AgendamentoPage from './pages/AgendamentoPage';
-import ScrollToTop from './components/ScrollToTop';
+import Header from './components/layout/Header';
+import Footer from './components/layout/Footer';
+import Home from './pages/Home';
+import SobreNos from './pages/SobreNos';
+import Servicos from './pages/Servicos';
+import Projetos from './pages/Projetos';
+import Blog from './pages/Blog';
+import Contato from './pages/Contato';
+import ScrollToTop from './components/utils/ScrollToTop';
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="font-roboto text-neutral-800 flex flex-col min-h-screen">
       <ScrollToTop />
-      <Navbar />
+      <Header />
       <main className="flex-grow">
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/servicos" element={<ServicosPage />} />
-          <Route path="/sobre" element={<SobrePage />} />
-          <Route path="/equipe" element={<EquipePage />} />
-          <Route path="/contato" element={<ContatoPage />} />
-          <Route path="/blog" element={<BlogPage />} />
-          <Route path="/agendamento" element={<AgendamentoPage />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/sobre-nos" element={<SobreNos />} />
+          <Route path="/servicos" element={<Servicos />} />
+          <Route path="/projetos" element={<Projetos />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/contato" element={<Contato />} />
         </Routes>
       </main>
       <Footer />
