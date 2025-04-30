@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Heart, Stethoscope, Brain, Microscope, Activity, Baby, 
-         UserCheck, Bone, Eye, FirstAid, Clipboard, Pills } from 'lucide-react';
+  UserCheck, Bone, Eye, ShieldPlus, Clipboard, Pill } from 'lucide-react';
+
 import ServiceCard from '../components/ServiceCard';
 import CTASection from '../components/CTASection';
 
@@ -66,7 +67,7 @@ const ServicosPage: React.FC = () => {
       description: 'Cuidados completos para a saúde dos olhos, desde exames de rotina até tratamentos para doenças oculares complexas.',
     },
     {
-      icon: <FirstAid className="h-6 w-6" />,
+      icon: <ShieldPlus className="h-6 w-6" />,
       title: 'Dermatologia',
       description: 'Diagnóstico e tratamento de doenças relacionadas à pele, cabelo e unhas, com abordagens clínicas e estéticas.',
     },
